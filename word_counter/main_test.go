@@ -1,4 +1,4 @@
-package main_test
+package main
 
 import (
 	"bytes"
@@ -28,13 +28,5 @@ func TestCountbytes(t *testing.T) {
 	res := count(b, false, true)
 	if res != exp {
 		t.Errorf("Expected %d, got %d instead.\n", exp, res)
-	}
-}
-
-func TestMain(m *testing.M) {
-	exp := "hello World"
-	res := main()
-	if res != exp {
-		t.Errorf("Expected %s, got %s", exp, res)
 	}
 }
